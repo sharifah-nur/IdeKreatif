@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "INSERT INTO users (username, name, password)
     VALUES ('$username', '$name', '$hashedPassword')";
-    if ($conn->query($sql) == TRUE) {
+    if ($conn->query($sql) === TRUE) {
         //simpan notifikasi ke dalam session
         $_SESSION['notification'] = [
             'type' => 'primary',
