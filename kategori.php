@@ -87,7 +87,7 @@ include '.includes/toast_notification.php';
                                 <div class="modal-body">
                                     <form action="proses_kategori.php" method="POST">
                                         <!-- input tersembunyi untuk menyimpan ID kategori -->
-                                         <input type="hidden" name="catID" value="<?= $category['category_name']; ?>">
+                                         <input type="hidden" name="catID" value="<?= $category['category_id']; ?>">
                                          <div class="form-group">
                                             <label>Nama Kategori</label>
                                             <!-- input untuk nama kategori -->
