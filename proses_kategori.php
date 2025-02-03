@@ -66,7 +66,7 @@ if (isset($_POST['update'])) {
     $category_name = $_POST ['category_name'];
 
     //query untuk memperbarui data kategori berdasarkan ID
-    $query = "UPDATE categpries SET category_name ='$category_name' WHERE category_id='$catID'";
+    $query = "UPDATE categories SET category_name ='$category_name' WHERE category_id='$catID'";
     $exec = mysqli_query($conn, $query);
 
     //menyimpan notifikasi keberhasilan atau kegagalan ke dalam session
