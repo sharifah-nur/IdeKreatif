@@ -11,7 +11,7 @@ include '.includes/toast_notification.php';
     <div class="card-header d-flex justify-content-between align-items-center">
         <h4>Data Kategori</h4>
         <!-- Tombol untuk menambah kategori baru --> 
-         <button type="button" class="btn btn-primary" data-bs-toogle="modal" data-bs-target="#addCategory">
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategory">
             Tambah Kategori 
          </button>
     </div>
@@ -41,12 +41,14 @@ include '.includes/toast_notification.php';
                     <td>
                         <!-- Dropdown untuk opsi edit dan delete -->
                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toogle hide-arrow" data-bs-toogle="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                                 <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item" data-bs-toogle="modal" data-bs-target="#editCategory_<?= $category['category_id']; ?>"><i class="bx bx-edit-alt me-2"></i>Edit</a>
-                                <a href="#" class="dropdown-item" data-bs-toogle="modal" data-bs-target="#deleteCategory_<?= $category['category_id']; ?>"><i classs="bx bx-trash me-2"></i>Delete</a>
+                                <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editCategory_<?= $category['category_id']; ?>">
+                                <i class="bx bx-edit-alt me-2"></i>Edit</a>
+                                <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteCategory_<?= $category['category_id']; ?>">
+                                <i class="bx bx-trash me-2"></i>Delete</a>
                             </div>
                          </div>
                     </td>
