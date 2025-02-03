@@ -110,7 +110,7 @@ include '.includes/toast_notification.php';
 <?php include '.includes/footer.php'; ?>
 
 <!-- Modal untuk tambah data kategori -->
- <div class="modal fade" id="addCategory" tabindex="-1" arta-hidden="true">
+ <div class="modal fade" id="addCategory" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
