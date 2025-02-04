@@ -13,6 +13,6 @@ if (empty($_SESSION["username"]) || empty($_SESSION["role"])) {
         'type' => 'danger',
         'message' => 'Silahkan login terlebih dahulu!'
     ];
-    header('Location: ./auth/login/php');
+    header('Location: ./auth/login.php');
     exit();
 }
