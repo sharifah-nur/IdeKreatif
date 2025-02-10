@@ -36,7 +36,7 @@ include '.includes/toast_notification.php';
                              $exec = mysqli_query($conn, $query);
 
                              //perulangan untuk menampilkan setiap baris hasil query
-                             while ($post = mysqli_fetch_assoc($exec));
+                             while ($post = mysqli_fetch_assoc($exec)):
                              ?>
                              <tr>
                                 <td><?= $index++; ?></td>
