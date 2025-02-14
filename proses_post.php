@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     } else {
         //jika tidak ada file baru, gunakan gambar lama
         $imagePathQuery = "SELECT image_path FROM posts WHERE id_post = $postId";
-        $result = $conn->qery($imagePathQuery);
+        $result = $conn->query($imagePathQuery);
         $imagePath = ($result->num_rows > 0) ? $result->fetch_assoc() ['image_path'] : null;
     }
 
